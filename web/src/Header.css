@@ -1,0 +1,6 @@
+header .logo {
+    margin-top: 5vh;
+
+    display: grid;
+    justify-content: center;
+}

@@ -1,0 +1,21 @@
+footer .options {
+    margin-bottom: 30vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.options button {
+    border: none;
+    background-color: rgba(238, 238, 238, 0.911);
+    padding: 10px;
+    box-shadow: 1px 1px 3px 1px #eee;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #6495ed;
+    color: white;
+    transition: 0.1s;
+}

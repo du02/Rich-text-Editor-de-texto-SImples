@@ -1,0 +1,37 @@
+main .textarea {
+
+    margin-top: 10vh;
+
+    display: grid;
+    justify-content: center;
+}
+
+main .text{
+    color: rgb(131, 131, 131);
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    font-size: 18px;
+
+    width: 80vw;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    resize: none;
+}
+.text:hover {
+    transition: 0.2s;
+    border: 2px solid #6495ed;
+    border-radius: 2px;
+}
+
+/* barra de rolagem no Chrome, Safari, Opera*/
+::-webkit-scrollbar-track {
+    background-color: #6495ed;
+}
+::-webkit-scrollbar {
+    width: 3px;
+    background: #6495ed;
+}
+::-webkit-scrollbar-thumb {
+    background: #eee;
+}
