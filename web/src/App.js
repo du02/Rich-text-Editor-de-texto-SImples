@@ -1,43 +1,104 @@
-import React from 'react';
-
-// Img
-import logo from './logo.png';
+import React, { useState } from 'react';
 
 // Css
 import './global.css';
 import './Header.css';
 import './Main.css';
 import './Footer.css';
+import './FooterResp.css';
+
+// components
+import TextArea from './components/TextArea';
+import Logo from './components/Logo';
 
 function App() {
-  return (
-    <div class="container">
-        <header>
-            <div class="logo">
-                <img src={logo} alt="logo" width="150" height="100"/>
-            </div>
-        </header>
-        <main>
-            <div class="textarea">
-                <textarea class="text" placeholder="Digite o texto aqui..." rows="10"></textarea>
-            </div>
-        </main>
-        <footer>
-            <div class="menu">
-                <div class="options">
-                    <button><i class="fas fa-bold"></i></button>
-                    <button><i class="fas fa-italic"></i></button>
-                    <button><i class="fas fa-underline"></i></button>
-                    <button><i class="fas fa-align-left"></i></button>
-                    <button><i class="fas fa-align-center"></i></button>
-                    <button><i class="fas fa-align-right"></i></button>
-                    <button><i class="fas fa-undo-alt"></i></button>
-                    <button><i class="fas fa-redo-alt"></i></button>
+
+    const [ valueText, setValueText ] = useState();
+    //const [ styleText, setStyleText] = useState([]);
+
+    function changeBold() {
+        let text = document.getElementById('text').style.fontWeight = 'bold';
+            text = document.getElementById('text').value;
+
+        setValueText( text );
+    }
+
+    function changeItalic() {
+        let text = document.getElementById('text').style.fontStyle = 'italic';
+            text = document.getElementById('text').value;
+
+
+        setValueText( text );
+    }
+
+    function changeUnder() {
+        let text = document.getElementById('text').style.textDecoration = 'underline';
+            text = document.getElementById('text').value;
+
+        setValueText( text );
+    }
+
+    function changeLeft() {
+        let text = document.getElementById('text').style.textAlign = 'left';
+            text = document.getElementById('text').value;
+
+        setValueText( text );
+    }
+
+    function changeCenter() {
+        let text = document.getElementById('text').style.textAlign = 'center';
+            text = document.getElementById('text').value;
+
+        setValueText( text );
+    }
+
+    function changeRigth() {
+        let text = document.getElementById('text').style.textAlign = 'right';
+            text = document.getElementById('text').value;
+
+        setValueText( text );
+    }
+
+    function returnEvent() {
+        let text = document.getElementById('text').style = 'none';
+            text = document.getElementById('text').value;
+
+        setValueText( text );
+    }
+
+    function nextEvent() {
+        
+    }
+
+    function reloadPag() {
+        window.history.go();
+    }
+
+    return (
+        <div className="container">
+            <header>
+                <Logo />
+            </header>
+            <main>
+                <TextArea value={valueText} />
+            </main>
+            <footer>
+                <div className="menu">
+                    <div className="options">
+                        <button onClick={changeBold} ><i className="fas fa-bold"></i></button>
+                        <button onClick={changeItalic} ><i className="fas fa-italic"></i></button>
+                        <button onClick={changeUnder} ><i className="fas fa-underline"></i></button>
+                        <button onClick={changeLeft} ><i className="fas fa-align-left"></i></button>
+                        <button onClick={changeCenter} ><i className="fas fa-align-center"></i></button>
+                        <button onClick={changeRigth}><i className="fas fa-align-right"></i></button>
+                        <button onClick={returnEvent} ><i className="fas fa-arrow-left"></i></button>
+                        <button onClick={nextEvent} ><i className="fas fa-arrow-right"></i></button>
+                        <button onClick={reloadPag} ><i className="fas fa-history"></i></button>
+                    </div>
                 </div>
-            </div>
-        </footer>
-    </div>
-  );
+            </footer>
+        </div>
+    );
 }
 
 export default App;

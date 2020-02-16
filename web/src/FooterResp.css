@@ -1,0 +1,23 @@
+@media (max-width: 576px) { 
+    footer .options {
+            margin-bottom: 10vh;
+        }
+}
+
+@media (min-width: 768px) { 
+    footer .options {
+            margin-bottom: 10vh;
+        }
+}
+
+@media (min-width: 992px) { 
+    footer .options {
+            margin-bottom: 30vh;
+        }
+}
+
+@media (min-width: 1200px) { 
+    footer .options {
+            margin-bottom: 30vh;
+        }
+}

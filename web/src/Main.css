@@ -4,6 +4,8 @@ main .textarea {
 
     display: grid;
     justify-content: center;
+
+    height: 300px;
 }
 
 main .text{
