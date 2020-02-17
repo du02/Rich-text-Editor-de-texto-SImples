@@ -3,6 +3,8 @@
 ### O que é o projeto (What is the project.)
 Um pequeno editor de texto feito em React JS.
 
+Versão 0.1
+
 ### Principal funcionalidade: (Main functionality:)
 Editar textos.
 
@@ -26,8 +28,11 @@ Nesses dias fiz...
 
 Nesses dias fiz...
 >Estudo do React Js
+#####
 >Components
+#####
 >Propriedades
+#####
 >Estado
 #####
 >Implementação das funções simples.
