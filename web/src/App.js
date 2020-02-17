@@ -14,7 +14,6 @@ import Logo from './components/Logo';
 function App() {
 
     const [ valueText, setValueText ] = useState();
-    //const [ styleText, setStyleText] = useState([]);
 
     function changeBold() {
         let text = document.getElementById('text').style.fontWeight = 'bold';
@@ -59,17 +58,6 @@ function App() {
         setValueText( text );
     }
 
-    function returnEvent() {
-        let text = document.getElementById('text').style = 'none';
-            text = document.getElementById('text').value;
-
-        setValueText( text );
-    }
-
-    function nextEvent() {
-        
-    }
-
     function reloadPag() {
         window.history.go();
     }
@@ -91,8 +79,6 @@ function App() {
                         <button onClick={changeLeft} ><i className="fas fa-align-left"></i></button>
                         <button onClick={changeCenter} ><i className="fas fa-align-center"></i></button>
                         <button onClick={changeRigth}><i className="fas fa-align-right"></i></button>
-                        <button onClick={returnEvent} ><i className="fas fa-arrow-left"></i></button>
-                        <button onClick={nextEvent} ><i className="fas fa-arrow-right"></i></button>
                         <button onClick={reloadPag} ><i className="fas fa-history"></i></button>
                     </div>
                 </div>

@@ -7,10 +7,8 @@ Um pequeno editor de texto feito em React JS.
 Editar textos.
 
 ### Prévia (Previow)
-IMG
+![illud](https://user-images.githubusercontent.com/40076527/74679603-17d87b00-519d-11ea-98ce-547b7b478a77.PNG)
 
-### Como Executa-lo (Run)
-[Em breve...]
 
 ### Diário de Bordo (Logbook)
 
@@ -23,3 +21,13 @@ Nesses dias fiz...
 >Ínicio da programação front-end.
 #####
 >Término da programação front-end.
+
+### Dia 15/02/20 até o dia 17/02/20
+
+Nesses dias fiz...
+>Estudo do React Js
+>Components
+>Propriedades
+>Estado
+#####
+>Implementação das funções simples.
